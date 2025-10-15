@@ -1,19 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
-import { ActualitsPourLesSubsection } from "./sections/ActualitsPourLesSubsection";
-import { CeQueDisentNosSubsection } from "./sections/CeQueDisentNosSubsection";
-import { DcouvrirNotreSubsection } from "./sections/DcouvrirNotreSubsection";
-import { FooterSubsection } from "./sections/FooterSubsection";
-import { HeroSectionSubsection } from "./sections/HeroSectionSubsection";
-import { JeLoueJeVendLaSubsection } from "./sections/JeLoueJeVendLaSubsection";
-import { LmentsDeRassuranceSubsection } from "./sections/LmentsDeRassuranceSubsection";
-import { NewsletterSubsection } from "./sections/NewsletterSubsection";
-import { NosSimulateursEnSubsection } from "./sections/NosSimulateursEnSubsection";
-import { NosSubsection } from "./sections/NosSubsection";
-import { NosWrapperSubsection } from "./sections/NosWrapperSubsection";
-import { TabBarSubsection } from "./sections/TabBarSubsection";
-import { VotreDevisEnSubsection } from "./sections/VotreDevisEnSubsection";
-import { VotreProjetSubsection } from "./sections/VotreProjetSubsection";
+import { ActualitsPourLesSubsection } from "../../components/sections/ActualitsPourLesSubsection";
+import { CeQueDisentNosSubsection } from "../../components/sections/CeQueDisentNosSubsection";
+import { DcouvrirNotreSubsection } from "../../components/sections/DcouvrirNotreSubsection";
+import { FooterSubsection } from "../../components/sections/FooterSubsection";
+import { HeroSectionSubsection } from "../../components/sections/HeroSectionSubsection";
+import { JeLoueJeVendLaSubsection } from "../../components/sections/JeLoueJeVendLaSubsection";
+import { LmentsDeRassuranceSubsection } from "../../components/sections/LmentsDeRassuranceSubsection";
+import { NewsletterSubsection } from "../../components/sections/NewsletterSubsection";
+import { NosSimulateursEnSubsection } from "../../components/sections/NosSimulateursEnSubsection";
+import { NosSubsection } from "../../components/sections/NosSubsection";
+import { NosWrapperSubsection } from "../../components/sections/NosWrapperSubsection";
+import { TabBarSubsection } from "../../components/sections/TabBarSubsection";
+import { VotreDevisEnSubsection } from "../../components/sections/VotreDevisEnSubsection";
+import { VotreProjetSubsection } from "../../components/sections/VotreProjetSubsection";
 
 const navigationItems = [
   { label: "Je loue", active: true },
@@ -31,14 +32,26 @@ export const MetierMobile = (): JSX.Element => {
 
       <header className="flex w-full items-center justify-between pt-[50px] pb-4 px-4 fixed top-0 left-0 z-50 rounded-[0px_0px_16px_16px] overflow-hidden border-[none] shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] bg-[linear-gradient(142deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)] before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-[0px_0px_16px_16px] before:[background:linear-gradient(172deg,rgba(255,255,255,0)_0%,rgba(170,127,251,1)_37%,rgba(170,127,251,1)_70%,rgba(255,255,255,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none">
         <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
-          <img
-            className="relative w-[170px] h-8 object-cover"
-            alt="Logo horizontal"
-            src="/logo_horizontal.png"
-          />
+          <Link to="/">
+            <img
+              className="relative w-[170px] h-8 object-cover"
+              alt="Logo horizontal"
+              src="/logo_horizontal.png"
+            />
+          </Link>
         </div>
 
         <nav className="flex items-center justify-end gap-2 relative flex-1 grow">
+          <Link to="/metier">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-sm font-medium"
+            >
+              Métier
+            </Button>
+          </Link>
+
           <Button
             variant="ghost"
             size="icon"

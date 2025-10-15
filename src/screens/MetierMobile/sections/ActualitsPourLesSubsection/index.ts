@@ -1,1 +1,0 @@
-export { ActualitsPourLesSubsection } from "./ActualitsPourLesSubsection";
