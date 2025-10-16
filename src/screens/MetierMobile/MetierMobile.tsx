@@ -4,6 +4,7 @@ import { Button } from "../../components/ui/button";
 import { ActualitsPourLesSubsection } from "../../components/sections/ActualitsPourLesSubsection";
 import { FooterSubsection } from "../../components/sections/FooterSubsection";
 import { HeroSectionSubsection } from "../../components/sections/HeroSectionSubsection";
+import { IlsNousFontConfianceSubsection } from "../../components/sections/IlsNousFontConfianceSubsection";
 import { LmentsDeRassuranceSubsection } from "../../components/sections/LmentsDeRassuranceSubsection";
 import { NewsletterSubsection } from "../../components/sections/NewsletterSubsection";
 import { NosWrapperSubsection } from "../../components/sections/NosWrapperSubsection";
@@ -82,6 +83,7 @@ export const MetierMobile = (): JSX.Element => {
         <LmentsDeRassuranceSubsection />
         <NosWrapperSubsection />
         <VotreDevisEnSubsection />
+        <IlsNousFontConfianceSubsection />
         <ActualitsPourLesSubsection title="Actualités pour les professionnels de l'immobilier" />
         <NewsletterSubsection />
         <FooterSubsection />
