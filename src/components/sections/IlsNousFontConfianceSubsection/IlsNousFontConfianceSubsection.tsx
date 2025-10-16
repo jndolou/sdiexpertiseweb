@@ -9,7 +9,7 @@ const categories = [
 ];
 
 const logos = [
-  { name: "My TFI", src: "/logo copie.png", alt: "My TFI" },
+  { name: "My TFI", src: "/logo%20copie.png", alt: "My TFI" },
   { name: "BFM Business", src: "/Logo_BFM_Business.svg.png", alt: "BFM Business" },
   { name: "Marie Claire", src: "/logo-2.png", alt: "Marie Claire" },
   { name: "Vici", src: "/logo.png", alt: "Vici" },
