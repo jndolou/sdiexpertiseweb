@@ -9,7 +9,6 @@ import { HeroSectionSubsection } from "../../components/sections/HeroSectionSubs
 import { JeLoueJeVendLaSubsection } from "../../components/sections/JeLoueJeVendLaSubsection";
 import { LmentsDeRassuranceSubsection } from "../../components/sections/LmentsDeRassuranceSubsection";
 import { NewsletterSubsection } from "../../components/sections/NewsletterSubsection";
-import { NosSimulateursEnSubsection } from "../../components/sections/NosSimulateursEnSubsection";
 import { NosSubsection } from "../../components/sections/NosSubsection";
 import { NosWrapperSubsection } from "../../components/sections/NosWrapperSubsection";
 import { TabBarSubsection } from "../../components/sections/TabBarSubsection";
@@ -82,7 +81,6 @@ export const AccueilMobile = (): JSX.Element => {
         <NosWrapperSubsection />
         <DcouvrirNotreSubsection />
         <NosSubsection />
-        <NosSimulateursEnSubsection />
         <VotreDevisEnSubsection />
         <CeQueDisentNosSubsection />
         <NewsletterSubsection />
