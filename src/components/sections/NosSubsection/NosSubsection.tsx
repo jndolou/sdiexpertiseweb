@@ -49,7 +49,7 @@ export const NosSubsection = (): JSX.Element => {
           </h2>
         </header>
 
-        <div className="w-full overflow-x-auto">
+        <div className="w-full overflow-x-auto scrollbar-hide">
           <div className="flex items-start gap-[15px] pb-4">
             {resourcesData.map((resource) => (
               <Card

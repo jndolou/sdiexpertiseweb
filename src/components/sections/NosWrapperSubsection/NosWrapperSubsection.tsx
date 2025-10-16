@@ -3,7 +3,6 @@ import React from "react";
 import { Badge } from "../../ui/badge";
 import { Button } from "../../ui/button";
 import { Card, CardContent } from "../../ui/card";
-import { ScrollArea, ScrollBar } from "../../ui/scroll-area";
 
 const diagnosticsData = [
   {
@@ -67,7 +66,7 @@ export const NosWrapperSubsection = (): JSX.Element => {
           </p>
         </div>
 
-        <ScrollArea className="w-full whitespace-nowrap">
+        <div className="w-full overflow-x-auto scrollbar-hide">
           <div className="flex gap-[15px] pb-4">
             {diagnosticsData.map((diagnostic, index) => (
               <Card
@@ -113,8 +112,7 @@ export const NosWrapperSubsection = (): JSX.Element => {
               </Card>
             ))}
           </div>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
+        </div>
 
         <div className="flex flex-col items-end w-full">
           <Button className="h-auto inline-flex items-center justify-center gap-2 px-4 py-3 bg-[#faf8fc] rounded-[62px] overflow-hidden shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb,3.63e-16px_2.93px_11.87px_#33333324] hover:bg-[#f0eef4]">

@@ -3,7 +3,6 @@ import React from "react";
 import { Badge } from "../../ui/badge";
 import { Button } from "../../ui/button";
 import { Card, CardContent } from "../../ui/card";
-import { ScrollArea, ScrollBar } from "../../ui/scroll-area";
 
 const articles = [
   {
@@ -59,7 +58,7 @@ export const ActualitsPourLesSubsection = ({ title = "Articles à la une" }: { t
           </p>
         </header>
 
-        <ScrollArea className="w-full">
+        <div className="w-full overflow-x-auto scrollbar-hide">
           <div className="flex items-start gap-3.5 pb-4">
             {articles.map((article) => (
               <article
@@ -102,8 +101,7 @@ export const ActualitsPourLesSubsection = ({ title = "Articles à la une" }: { t
               </article>
             ))}
           </div>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
+        </div>
 
         <div className="flex flex-col h-12 items-center justify-center gap-2.5 w-full">
           <div className="flex flex-col items-end gap-2.5 w-full">
