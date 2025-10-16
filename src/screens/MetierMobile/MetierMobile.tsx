@@ -2,18 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { ActualitsPourLesSubsection } from "../../components/sections/ActualitsPourLesSubsection";
-import { CeQueDisentNosSubsection } from "../../components/sections/CeQueDisentNosSubsection";
-import { DcouvrirNotreSubsection } from "../../components/sections/DcouvrirNotreSubsection";
 import { FooterSubsection } from "../../components/sections/FooterSubsection";
 import { HeroSectionSubsection } from "../../components/sections/HeroSectionSubsection";
 import { LmentsDeRassuranceSubsection } from "../../components/sections/LmentsDeRassuranceSubsection";
 import { NewsletterSubsection } from "../../components/sections/NewsletterSubsection";
-import { NosSimulateursEnSubsection } from "../../components/sections/NosSimulateursEnSubsection";
-import { NosSubsection } from "../../components/sections/NosSubsection";
 import { NosWrapperSubsection } from "../../components/sections/NosWrapperSubsection";
 import { TabBarSubsection } from "../../components/sections/TabBarSubsection";
 import { VotreDevisEnSubsection } from "../../components/sections/VotreDevisEnSubsection";
-import { VotreProjetSubsection } from "../../components/sections/VotreProjetSubsection";
 
 const navigationItems = [
   { label: "Je loue", active: true },
@@ -85,14 +80,9 @@ export const MetierMobile = (): JSX.Element => {
         <HeroSectionSubsection />
 
         <LmentsDeRassuranceSubsection />
-        <VotreProjetSubsection />
         <ActualitsPourLesSubsection />
         <NosWrapperSubsection />
-        <DcouvrirNotreSubsection />
-        <NosSubsection />
-        <NosSimulateursEnSubsection />
         <VotreDevisEnSubsection />
-        <CeQueDisentNosSubsection />
         <NewsletterSubsection />
         <FooterSubsection />
       </main>
