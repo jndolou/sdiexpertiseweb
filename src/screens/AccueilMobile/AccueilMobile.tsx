@@ -42,16 +42,6 @@ export const AccueilMobile = (): JSX.Element => {
         </div>
 
         <nav className="flex items-center justify-end gap-2 relative flex-1 grow">
-          <Link to="/metier">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-sm font-medium"
-            >
-              Métier
-            </Button>
-          </Link>
-
           <Button
             variant="ghost"
             size="icon"
