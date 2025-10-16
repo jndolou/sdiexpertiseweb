@@ -35,7 +35,7 @@ export const NosSimulateursEnSubsection = (): JSX.Element => {
             <span className="[font-family:'Pecita-Regular',Helvetica] text-[#1c1b1b] text-[23px] leading-[27.6px]">
               &nbsp;
             </span>
-            <span className="[font-family:'Pecita-Regular',Helvetica] text-[#7e3287] text-[23px] leading-[27.6px]">
+            <span className="[font-family:'Pecita',Helvetica] text-[#7E3287] text-[23px] leading-[27.6px]">
               quelques
             </span>
             <span className="text-[#1c1b1b] leading-[var(--paragraphe-1-line-height)] font-paragraphe-1 [font-style:var(--paragraphe-1-font-style)] font-[number:var(--paragraphe-1-font-weight)] tracking-[var(--paragraphe-1-letter-spacing)] text-[length:var(--paragraphe-1-font-size)]">

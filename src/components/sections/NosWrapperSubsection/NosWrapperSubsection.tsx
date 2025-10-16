@@ -63,7 +63,7 @@ export const NosWrapperSubsection = (): JSX.Element => {
             <span className="text-[#1c1b1b]">
               Des diagnostics précis, pour des décisions{" "}
             </span>
-            <span className="text-[#875eda]">sereines</span>
+            <span className="[font-family:'Pecita',Helvetica] text-[#7E3287]">sereines</span>
           </p>
         </div>
 

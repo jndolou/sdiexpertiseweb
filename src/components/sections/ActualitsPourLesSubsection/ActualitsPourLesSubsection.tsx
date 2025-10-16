@@ -49,7 +49,7 @@ export const ActualitsPourLesSubsection = (): JSX.Element => {
               Découvrez les
             </span>
             <span className="text-[#1e0142] leading-[0.1px]">&nbsp;</span>
-            <span className="[font-family:'Pecita-Regular',Helvetica] text-[#7e3287] text-[23px] leading-[27.6px]">
+            <span className="[font-family:'Pecita',Helvetica] text-[#7E3287] text-[23px] leading-[27.6px]">
               derniers
             </span>
             <span className="text-[#1e0143] leading-[20.8px]">&nbsp;</span>

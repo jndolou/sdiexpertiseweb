@@ -39,7 +39,7 @@ export const VotreDevisEnSubsection = (): JSX.Element => {
             <span className="text-[#1e0143] leading-[var(--paragraphe-1-line-height)] font-paragraphe-1 [font-style:var(--paragraphe-1-font-style)] font-[number:var(--paragraphe-1-font-weight)] tracking-[var(--paragraphe-1-letter-spacing)] text-[length:var(--paragraphe-1-font-size)]">
               &nbsp;
             </span>
-            <span className="[font-family:'Pecita-Regular',Helvetica] text-[#7e3287] text-[23px] leading-[29.9px]">
+            <span className="[font-family:'Pecita',Helvetica] text-[#7E3287] text-[23px] leading-[29.9px]">
               4
             </span>
             <span className="text-[#1e0143] leading-[20.8px]">&nbsp;</span>
