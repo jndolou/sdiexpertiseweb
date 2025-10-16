@@ -1,6 +1,5 @@
 import React from "react";
 import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
-import { ScrollArea, ScrollBar } from "../../ui/scroll-area";
 
 const categories = [
   { value: "industrie", label: "Industrie" },
@@ -43,23 +42,20 @@ export const IlsNousFontConfianceSubsection = (): JSX.Element => {
           </ToggleGroup>
         </header>
 
-        <ScrollArea className="w-full">
-          <div className="flex items-center gap-4 px-4 py-1">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 flex items-center justify-center h-[66px] px-6 rounded-2xl overflow-hidden border-[none] shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] bg-[linear-gradient(142deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)] before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-2xl before:[background:linear-gradient(172deg,rgba(255,255,255,0)_0%,rgba(170,127,251,1)_37%,rgba(170,127,251,1)_70%,rgba(255,255,255,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-full max-h-[50px] w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
+        <div className="flex items-start gap-[15px] w-full overflow-x-auto pb-2 scrollbar-hide">
+          {logos.map((logo, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 flex items-center justify-center h-[66px] px-6 rounded-2xl overflow-hidden border-[none] shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] bg-[linear-gradient(142deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)] before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-2xl before:[background:linear-gradient(172deg,rgba(255,255,255,0)_0%,rgba(170,127,251,1)_37%,rgba(170,127,251,1)_70%,rgba(255,255,255,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="h-full max-h-[50px] w-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
