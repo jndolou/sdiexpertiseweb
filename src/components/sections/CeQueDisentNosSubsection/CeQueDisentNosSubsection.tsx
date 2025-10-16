@@ -59,7 +59,7 @@ export const CeQueDisentNosSubsection = (): JSX.Element => {
                         (_, starIndex) => (
                           <img
                             key={starIndex}
-                            className="w-3 h-3"
+                            className="w-3 h-3 brightness-0"
                             alt="Star"
                             src="/star.svg"
                           />

@@ -45,7 +45,7 @@ export const HeroSectionSubsection = (): JSX.Element => {
                     {[...Array(5)].map((_, index) => (
                       <img
                         key={index}
-                        className="relative w-3 h-3"
+                        className="relative w-3 h-3 brightness-0"
                         alt="Star"
                         src="/star.svg"
                       />
