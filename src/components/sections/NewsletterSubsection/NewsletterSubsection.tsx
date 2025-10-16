@@ -15,12 +15,12 @@ export const NewsletterSubsection = (): JSX.Element => {
               Inscrivez-vous à notre newsletter !
             </h2>
 
-            <div className="flex w-full h-8 items-center gap-2.5 px-[13px] py-0 bg-lila rounded-[9px]">
-              <p className="w-full h-2 [font-family:'Ubuntu',Helvetica] font-normal text-xs tracking-[0] leading-3 whitespace-nowrap">
-                <span className="font-medium text-[#1c1b1b] leading-[21px]">
+            <div className="flex w-full h-8 items-center justify-center gap-2.5 px-[13px] py-0 bg-lila rounded-[9px]">
+              <p className="flex items-center justify-center [font-family:'Ubuntu',Helvetica] font-normal text-xs tracking-[0] leading-[normal] whitespace-nowrap">
+                <span className="font-medium text-[#1c1b1b]">
                   10%*
                 </span>
-                <span className="font-medium text-[#7e3287] leading-[21px]">
+                <span className="font-medium text-[#7e3287]">
                   {" "}
                   pour vous, des (bons) conseils et des promos !
                 </span>
