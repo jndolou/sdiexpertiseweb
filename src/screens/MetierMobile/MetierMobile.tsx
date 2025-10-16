@@ -81,8 +81,8 @@ export const MetierMobile = (): JSX.Element => {
 
         <LmentsDeRassuranceSubsection />
         <NosWrapperSubsection />
-        <ActualitsPourLesSubsection />
         <VotreDevisEnSubsection />
+        <ActualitsPourLesSubsection />
         <NewsletterSubsection />
         <FooterSubsection />
       </main>
