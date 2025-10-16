@@ -1,5 +1,6 @@
 import React from "react";
 import { ToggleGroup, ToggleGroupItem } from "../../ui/toggle-group";
+import { ScrollArea, ScrollBar } from "../../ui/scroll-area";
 
 const categories = [
   { value: "industrie", label: "Industrie" },
@@ -8,11 +9,10 @@ const categories = [
 ];
 
 const logos = [
-  { name: "Auchan", src: "/frame-403.svg", alt: "Auchan" },
-  { name: "MGEN", src: "/frame-403-1.svg", alt: "MGEN" },
-  { name: "SPECIA", src: "/frame-403-2.svg", alt: "SPECIA" },
-  { name: "Orpi", src: "/frame-403-3.svg", alt: "Orpi" },
-  { name: "Pont Royal", src: "/frame-403-4.svg", alt: "Pont Royal" },
+  { name: "My TFI", src: "/logo copie.png", alt: "My TFI" },
+  { name: "BFM Business", src: "/Logo_BFM_Business.svg.png", alt: "BFM Business" },
+  { name: "Marie Claire", src: "/logo-2.png", alt: "Marie Claire" },
+  { name: "Vici", src: "/logo.png", alt: "Vici" },
 ];
 
 export const IlsNousFontConfianceSubsection = (): JSX.Element => {
@@ -43,20 +43,23 @@ export const IlsNousFontConfianceSubsection = (): JSX.Element => {
           </ToggleGroup>
         </header>
 
-        <div className="grid grid-cols-3 gap-4 w-full">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-4 rounded-2xl overflow-hidden border-[none] shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] bg-[linear-gradient(142deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)] before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-2xl before:[background:linear-gradient(172deg,rgba(255,255,255,0)_0%,rgba(170,127,251,1)_37%,rgba(170,127,251,1)_70%,rgba(255,255,255,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="w-full h-auto max-w-[80px] object-contain"
-              />
-            </div>
-          ))}
-        </div>
+        <ScrollArea className="w-full">
+          <div className="flex items-center gap-4 px-4 py-1">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 flex items-center justify-center h-[66px] px-6 rounded-2xl overflow-hidden border-[none] shadow-[inset_1.13e-16px_1.85px_1.85px_#ffffff,inset_-1.13e-16px_-1.85px_1.85px_#ebebeb] backdrop-blur-[15px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(15px)_brightness(100%)] bg-[linear-gradient(142deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0)_100%)] before:content-[''] before:absolute before:inset-0 before:p-px before:rounded-2xl before:[background:linear-gradient(172deg,rgba(255,255,255,0)_0%,rgba(170,127,251,1)_37%,rgba(170,127,251,1)_70%,rgba(255,255,255,0)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-full max-h-[50px] w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </div>
     </section>
   );
