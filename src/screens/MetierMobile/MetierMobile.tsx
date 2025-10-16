@@ -82,7 +82,7 @@ export const MetierMobile = (): JSX.Element => {
         <LmentsDeRassuranceSubsection />
         <NosWrapperSubsection />
         <VotreDevisEnSubsection />
-        <ActualitsPourLesSubsection />
+        <ActualitsPourLesSubsection title="Actualités pour les professionnels de l'immobilier" />
         <NewsletterSubsection />
         <FooterSubsection />
       </main>

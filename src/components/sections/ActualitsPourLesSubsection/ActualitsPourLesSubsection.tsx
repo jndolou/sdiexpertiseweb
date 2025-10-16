@@ -35,13 +35,13 @@ const articles = [
   },
 ];
 
-export const ActualitsPourLesSubsection = (): JSX.Element => {
+export const ActualitsPourLesSubsection = ({ title = "Articles à la une" }: { title?: string }): JSX.Element => {
   return (
     <section className="flex items-start gap-2.5 pt-0 pb-[65px] px-4 w-full">
       <div className="flex flex-col items-start gap-8 w-full">
         <header className="flex flex-col items-start justify-center gap-[15px] w-full overflow-hidden">
-          <h2 className="w-full font-titre-2-mobile font-[number:var(--titre-2-mobile-font-weight)] text-dark text-[length:var(--titre-2-mobile-font-size)] tracking-[var(--titre-2-mobile-letter-spacing)] leading-[var(--titre-2-mobile-line-height)] whitespace-nowrap [font-style:var(--titre-2-mobile-font-style)]">
-            Articles à la une
+          <h2 className="w-full font-titre-2-mobile font-[number:var(--titre-2-mobile-font-weight)] text-dark text-[length:var(--titre-2-mobile-font-size)] tracking-[var(--titre-2-mobile-letter-spacing)] leading-[var(--titre-2-mobile-line-height)] [font-style:var(--titre-2-mobile-font-style)]">
+            {title}
           </h2>
 
           <p className="[font-family:'Open_Sans',Helvetica] font-normal text-base tracking-[0] leading-4">
