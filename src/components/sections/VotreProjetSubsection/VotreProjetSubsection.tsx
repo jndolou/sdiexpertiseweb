@@ -45,7 +45,7 @@ export const VotreProjetSubsection = (): JSX.Element => {
             Votre projet
           </h2>
 
-          <div className="flex items-start gap-[15px] w-full overflow-x-auto pb-2">
+          <div className="flex items-start gap-[15px] w-full overflow-x-auto pb-2 scrollbar-hide">
             {projectCards.map((card, index) => (
               <Card
                 key={index}
